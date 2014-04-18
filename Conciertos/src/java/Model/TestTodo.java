@@ -11,5 +11,12 @@ package Model;
  * @author Estefanía Neitzky
  */
 public class TestTodo {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
     
 }
