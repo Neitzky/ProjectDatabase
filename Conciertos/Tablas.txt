@@ -1,0 +1,29 @@
+CREATE TABLE Grupo(
+ID_grupo integer,
+nombre_grupo varchar2(40),
+nacimiento DATE ,
+CONSTRAINT ID_grupo_pk PRIMARY KEY(ID_grupo))
+
+CREATE TABLE Itinerario(
+ID_itinerario integer,
+ID_grupo integer,
+nombre varchar2 (40),
+CONSTRAINT ID_grupo_fk_la FOREIGN KEY(ID_grupo)
+REFERENCES Grupo(ID_grupo),
+CONSTRAINT ID_itinerario_pk PRIMARY KEY(ID_itinerario))
+
+CREATE TABLE Patrocinador(
+ID_patrocinador integer,
+ID_grupo integer,
+Nombre varchar2 (40),
+CONSTRAINT ID_grupo_fk_la FOREIGN KEY(ID_grupo)
+REFERENCES Grupo(ID_grupo),
+CONSTRAINT ID_patrocinador_pk PRIMARY KEY(ID_patrocinador))
+
+CREATE TABLE Ubicacion(
+ID_ubicacion integer,
+ID_grupo integer,
+Nombre varchar2(40),
+CONSTRAINT ID_grupo_fk_la FOREIGN KEY(ID_grupo)
+REFERENCES Grupo(ID_grupo),
+CONSTRAINT ID_ubicacion_pk PRIMARY KEY(ID_ubicacion))
