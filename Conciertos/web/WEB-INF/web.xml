@@ -18,7 +18,7 @@
         <url-pattern>/BuscarGrupo</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ServletAutenticar</servlet-name>
+        <servlet-name>ServletVerificar</servlet-name>
         <url-pattern>/Grupo</url-pattern>
     </servlet-mapping>
     <session-config>

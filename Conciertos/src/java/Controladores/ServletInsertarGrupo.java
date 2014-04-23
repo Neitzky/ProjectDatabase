@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Estefanía Neitzky
  */
-@WebServlet(name = "ServlentInsertarGrupo", urlPatterns = {"/InsertarGrupo"})
+@WebServlet(name = "ServletInsertarGrupo", urlPatterns = {"/InsertarGrupo"})
 public class ServletInsertarGrupo extends HttpServlet {
 
     /**
