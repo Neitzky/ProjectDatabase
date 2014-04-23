@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author Estefanía Neitzky
  */
 @WebServlet(name = "ServlentInsertarGrupo", urlPatterns = {"/InsertarGrupo"})
-public class ServlentInsertarGrupo extends HttpServlet {
+public class ServletInsertarGrupo extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
